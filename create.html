@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Rifa</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="theme-toggle">🌙</div>
+        <h1>Crear Nueva Rifa</h1>
+        <form id="create-form">
+            <label for="raffle-name">Nombre de la Rifa:</label>
+            <input type="text" id="raffle-name" name="raffle-name" required>
+
+            <label for="raffle-description">Descripción:</label>
+            <textarea id="raffle-description" name="raffle-description"></textarea>
+
+            <label for="raffle-prize">Premio:</label>
+            <input type="text" id="raffle-prize" name="raffle-prize" required>
+
+            <label for="ticket-price">Precio por Boleto:</label>
+            <input type="number" id="ticket-price" name="ticket-price" step="0.01" required>
+
+            <label for="total-tickets">Total de Boletos:</label>
+            <input type="number" id="total-tickets" name="total-tickets" required>
+
+            <button type="submit">Crear Rifa</button>
+            <a href="home.html"><button type="button">Volver</button></a>
+        </form>
+    </div>
+
+    <div id="custom-modal-overlay" class="hidden">
+      <div id="custom-modal">
+        <p id="modal-message"></p>
+        <div id="modal-buttons"></div>
+      </div>
+    </div>
+    <script src="src/js/create.js"></script>
+</body>
+</html>

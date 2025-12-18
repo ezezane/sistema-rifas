@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rifa Online</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sistema de Rifas - Inicio</title>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <div id="app">
-        <h1>Cargando rifa...</h1>
-    </div>
-
-    <div id="save-container" class="hidden">
-        <h3>Guardar Selección</h3>
-        <input type="text" id="buyer-name" placeholder="Nombre del comprador...">
-        <div class="button-group">
-            <button id="save-button">Guardar</button>
-            <button id="cancel-button">Cancelar</button>
+        <div id="theme-toggle">🌙</div>
+        <h1>Bienvenido al Sistema de Rifas</h1>
+        <p>Administra tus rifas de manera fácil y eficiente.</p>
+        <div class="home-buttons">
+            <button id="create-raffle">Crear Nueva Rifa</button>
+        </div>
+        <div id="raffles-list">
+            <h2>Rifas Existentes</h2>
+            <p>Cargando rifas...</p>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-        <script src="app.js"></script>
-        <div id="custom-modal-overlay" class="hidden">
-          <div id="custom-modal">
-            <p id="modal-message"></p>
-            <div id="modal-buttons"></div>
-          </div>
-        </div>
-      </body></html>
+    <script src="src/js/home.js"></script>
+</body>
+</html>
